@@ -36,9 +36,9 @@ public class AccountController : Controller
                 await _signInManager.SignInAsync(await _accountService.Register(model), true);
                 return RedirectToAction("Index", "User");
             }
-            catch (DuplicateNameException)
+            catch (DuplicateNameException ex)
             {
-                ModelState.AddModelError("", "User with such email already exists");
+                ModelState.AddModelError("", $"User with such {ex.Message} already exists");
                 return View(model);
             }
         }
@@ -71,6 +71,7 @@ public class AccountController : Controller
             var result = await _signInManager.PasswordSignInAsync(user, model.Password, true, false);
             if(result.Succeeded) 
                 return RedirectToAction("Index", "User");
+            
             ModelState.AddModelError("", "Incorrect Email and/or Password");
             return View(model);
         }

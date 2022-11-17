@@ -6,8 +6,8 @@ public class LoginViewModel
 {
     [Required(ErrorMessage = "Email is not present")]
     [DataType(DataType.EmailAddress, ErrorMessage = "Please, enter valid email address")]
-    public string Email { get; set; }
-    
+    public string Email { get; init; } = null!;
+
     [Required(ErrorMessage = "Name is not present")]
-    public string Password { get; set; } 
+    public string Password { get; init; } = null!;
 }

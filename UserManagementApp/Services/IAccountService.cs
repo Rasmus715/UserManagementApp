@@ -31,8 +31,16 @@ public class AccountService : IAccountService
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
 
         if (user != null)
-            throw new DuplicateNameException("User is already present in database");
-
+        { 
+            throw new DuplicateNameException("credentials");
+        }
+            
+        user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == model.Name);
+        if (user != null)
+        {
+            //UseName should be unique too. Identity limitations
+            throw new DuplicateNameException("name");
+        }
         user = new User
         {
             UserName = model.Name,
