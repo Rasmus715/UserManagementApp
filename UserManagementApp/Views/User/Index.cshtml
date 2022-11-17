@@ -1,0 +1,108 @@
+﻿@using UserManagementApp.Enums
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="d-flex justify-content-center">Users</h1>
+
+
+@using (Html.BeginForm("Index", "User", FormMethod.Post))
+{
+    <div class="d-flex flex-row justify-content-center">
+        <input type="submit" value="Block" class="btn btn-danger rounded d-block p-2" style="margin-right: 5px; width: 75px" alt="Block" onclick="return confirm('Are you sure?')" asp-route-operation="@Operation.Block" readonly="readonly"/>
+        <input type="image" class="btn btn-success rounded d-block p-2" src="~/svg/unblock.svg" style="margin-right: 5px; margin-left: 5px" alt="Unblock" onclick="return confirm('Are you sure?')" asp-route-operation="@Operation.Unblock"/>
+        <input type="image" class="btn btn-warning rounded d-block p-2" src="~/svg/delete.svg" style="margin-left: 5px" alt="Delete" onclick="return confirm('Are you sure?')" asp-route-operation="@Operation.Delete"/>
+    </div>
+
+    <table class="table" id="DataTable">
+        <thead>
+        <tr>
+            <th>
+                <input class="form-check-input" type="checkbox" value="" name="selectAllCheckbox" onClick="toggle(this)" id="mamaCheckbox"/>
+            </th>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Registration Date
+            </th>
+            <th>
+                Last Login Date
+            </th>
+            <th>
+                Status
+            </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in ViewBag.ListEmployee)
+        {
+            <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" value="@item.Id" name="userCheckbox" onClick="indeterminateScript()">
+                </td>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Email
+                </td>
+
+                <td>
+                    @item.RegisterDate
+                </td>
+                <td>
+                    @item.LastLoginDate
+                </td>
+                <td>
+                    @item.Status
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+<script>
+function toggle(source) {
+    let checkboxes = document.getElementsByName('userCheckbox');
+  for(var i = 0, n = checkboxes.length; i < n; i++) {
+    checkboxes[i].checked = source.checked;
+  }
+  
+}
+
+function indeterminateScript() {
+     let mamaCheckbox = document.getElementById('mamaCheckbox');
+     let checkboxes = document.getElementsByName('userCheckbox');
+     
+    let totalChecked = 0;
+      for(let j = 0, k = checkboxes.length; j < k; j++) {
+          if (checkboxes[j].checked === true)
+              totalChecked++;
+        }
+     
+      if (checkboxes.length === totalChecked) {
+                  mamaCheckbox.indeterminate = false;
+                  mamaCheckbox.checked = true;
+                } else {
+                  if (totalChecked === 0) {
+                    mamaCheckbox.indeterminate = false;
+                    mamaCheckbox.checked = false;
+                  } else {
+                    mamaCheckbox.indeterminate = true;
+                    mamaCheckbox.checked = false;
+                  }
+                }
+           
+}
+</script>

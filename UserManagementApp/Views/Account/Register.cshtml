@@ -1,0 +1,56 @@
+﻿@model UserManagementApp.ViewModels.RegisterViewModel
+
+<h2 style="margin: 1em">Registration</h2>
+
+<div class="validation d-flex justify-content-center" asp-validation-summary="ModelOnly"></div>
+<div class="container d-flex justify-content-center">
+    
+    <div class="d-flex justify-content-center">
+        <div class="d-flex">
+            <div class="card" style="width:40rem">
+                <div class="card-body">
+                    <form asp-action="Register" asp-controller="Account">
+
+                        <div class="form-group row" style="margin: 1em">
+                            <label asp-for="Email" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                            <div class="col-md-6" margin: b>
+                                <input asp-for="Email" type="text" id="Email" class="form-control" name="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row" style="margin: 1em">
+                            <label asp-for="Name" class="col-md-4 col-form-label text-md-right">Name</label>
+                            <div class="col-md-6">
+                                <input asp-for="Name" id="Name" class="form-control" name="Name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row" style="margin: 1em">
+                            <label asp-for="Password" for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                            <div class="col-md-6">
+                                <input asp-for="Password" type="password" id="Password" class="form-control" name="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 offset-md-4">
+                            <div class="form-group row" style="margin: 1em">
+                                <button type="submit" class="btn btn-primary d-flex justify-content-center">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        Already have an account?
+                        <a asp-controller="Account" asp-action="Login" class="btn-link">
+                            Log In
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

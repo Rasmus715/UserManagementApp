@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementApp", "UserManagementApp\UserManagementApp.csproj", "{8A1B707D-8F9D-42B1-A256-859D3229AEBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A1B707D-8F9D-42B1-A256-859D3229AEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1B707D-8F9D-42B1-A256-859D3229AEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1B707D-8F9D-42B1-A256-859D3229AEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1B707D-8F9D-42B1-A256-859D3229AEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
