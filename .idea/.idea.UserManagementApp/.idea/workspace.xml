@@ -8,12 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58171f00-8159-4772-90f4-5d12a999d653" name="Changes" comment="init: Initial commit">
-      <change afterPath="$PROJECT_DIR$/UserManagementApp/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementApp/Dockerfile" afterDir="false" />
+    <list default="true" id="58171f00-8159-4772-90f4-5d12a999d653" name="Changes" comment="feat: add Docker support">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UserManagementApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UserManagementApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementApp/UserManagementApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/UserManagementApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementApp/Views/Shared/_LayoutUser.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/Views/Shared/_LayoutUser.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.dll" afterDir="false" />
@@ -119,7 +115,7 @@
       <workItem from="1668444441507" duration="3635000" />
       <workItem from="1668452137043" duration="1988000" />
       <workItem from="1668610776434" duration="10989000" />
-      <workItem from="1668673194816" duration="29573000" />
+      <workItem from="1668673194816" duration="30642000" />
     </task>
     <task id="LOCAL-00001" summary="init: Initial commit">
       <created>1668708517563</created>
@@ -128,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668708517563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add Docker support">
+      <created>1668711949304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668711949304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +155,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial" />
     <MESSAGE value="init: Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init: Initial commit" />
+    <MESSAGE value="feat: add Docker support" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Docker support" />
   </component>
 </project>
