@@ -8,7 +8,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58171f00-8159-4772-90f4-5d12a999d653" name="Changes" comment="" />
+    <list default="true" id="58171f00-8159-4772-90f4-5d12a999d653" name="Changes" comment="init: Initial commit">
+      <change afterPath="$PROJECT_DIR$/UserManagementApp/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserManagementApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UserManagementApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/UserManagementApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/UserManagementApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/Views/Shared/_LayoutUser.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/Views/Shared/_LayoutUser.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/UserManagementApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/obj/Debug/net6.0/UserManagementApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/obj/Debug/net6.0/UserManagementApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementApp/obj/Debug/net6.0/UserManagementApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementApp/obj/Debug/net6.0/UserManagementApp.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/UserManagementApp/Views/Shared/_LayoutUser.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7821e728ca685b97e8a1f8b28162c23268160f93444e3abc3b5dffdaf7b/PathString.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/37a954845b52703c5cce1aacf8fa1292378878e82bf68c4c4b5effc447316e9/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserManagementApp/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserManagementApp/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserManagementApp/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/601c3d2f1bfa958c0388e8435dc1543366d3c8c7f6abf4493861219f944812a/AuthorizeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
@@ -39,6 +53,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2HXvnJtZIJIbymulZ9w8qdLet3C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -102,13 +119,22 @@
       <workItem from="1668444441507" duration="3635000" />
       <workItem from="1668452137043" duration="1988000" />
       <workItem from="1668610776434" duration="10989000" />
-      <workItem from="1668673194816" duration="26876000" />
+      <workItem from="1668673194816" duration="29573000" />
     </task>
+    <task id="LOCAL-00001" summary="init: Initial commit">
+      <created>1668708517563</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668708517563</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,5 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial" />
+    <MESSAGE value="init: Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init: Initial commit" />
   </component>
 </project>

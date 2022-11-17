@@ -1,0 +1,16 @@
+﻿version: "3.4"
+services:
+  usermanagement:
+    build:
+      context: "./"
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./temp-keys:/root/.aspnet/DataProtection-Keys
+    ports:
+      - "1337:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
